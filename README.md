@@ -1,3 +1,20 @@
+# LendingHome Notes
+This is a fork of https://github.com/reflux/refluxjs that adds react 15 to the package.json in the branch [v0.2.x](https://github.com/LendingHome/refluxjs/tree/v0.2.x).
+
+To make a change and republish:
+```bash
+git clone git@github.com:LendingHome/refluxjs.git
+cd refluxjs
+git checkout v0.2.x
+npm install
+# Make your changes
+npm run build
+# commit your changes
+npm version patch
+npm login # login as lendinghome using the npm password in 1password
+npm publish
+```
+
 # RefluxJS
 
 A simple library for unidirectional dataflow architecture inspired by ReactJS [Flux](http://facebook.github.io/react/blog/2014/05/06/flux.html).
